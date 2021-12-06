@@ -1,0 +1,214 @@
+body {
+    background-color: #ffcccc;
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    color: #290a3d;
+    font-size: 27px;
+    padding: 0px;
+    margin: 0px;
+}
+
+@keyframes appearance {
+    from {width: auto;}
+    to {width: max-content;}
+}
+
+header{
+
+    padding: 25px;
+    background-color: #ffb8b8;
+    font-family: 'Bebas Neue Cyrillic';
+    font-size: 27px;
+    color: #6D214F;
+}
+
+.header_blocks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header_text {
+    font-size: 60px;
+    width: 400px;
+    font-weight: bold;
+    font-family: 'Bebas Neue Cyrillic', 'Sitka Small';
+}
+
+.header_img {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+}
+
+.himg {
+    width: 150px;
+}
+
+.add_film_but {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Jost', sans-serif;
+}
+
+.add_film_button {
+    background-color: #FD7272;
+    width: 300px;
+    height: 80px;
+    font-size: 27px;
+    font-family: 'Jost', sans-serif;
+    border: #1F0113 solid 1px;
+}
+
+.adding {
+    padding: 20px;
+    display: none;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 270px;
+    border-bottom: black solid 1px;
+    background-color: #ffb8b8;
+
+}
+
+.divInput {
+    display: flex;
+    justify-content: space-between;
+}
+
+.filmInput {
+    width: 300px;
+    height: 20px;
+}
+
+label {
+    margin-left: 5px;
+}
+
+.btnBlock {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.addBtn {
+    width: 150px;
+    height: 50px;
+    margin: 10px;
+    padding: 5px;
+    font-size: 22px;
+}
+
+.poster {
+    width: 90%;
+    overflow: hidden;
+}
+
+.filmsZone {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.imgContainer {
+    position: relative;
+}
+
+.blockOfFilm {
+    background-color: #f7e6f0;
+    padding: 15px;
+    margin: 15px;
+    width: 20%;
+    height: 600px;
+    max-height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blockOfFilm:hover .hiddenBlock {
+    display: flex;
+    flex-direction: column;
+    color: #290a3d;
+    background-color: #f7e6f0;
+    z-index: 10;
+    width: 100%;
+}
+
+.blockOfFilm:hover {
+    border: px solid #dd3b3b;
+}
+
+.title {
+    margin-top: 5px;
+    margin-bottom: 0px;
+    font-size: 27px;
+}
+
+.info {
+    font-size: 17px;
+    margin: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.rating {
+    position: absolute;
+    top: 70%;
+    margin-left: 0px;
+    padding-left: 3px;
+    background-color: #dd3b3b;
+    color: #f7e6f0;
+    font-size: 25px;
+}
+
+.hiddenBlock {
+    display: none;
+    width: 200px;
+}
+
+.filter {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.classFilter {
+    font-size: 22px;
+    padding: 5px;
+    margin: 10px;
+    font-family: 'Jost', sans-serif;
+}
+
+.toFilter {
+    height: 40px;
+    width: 200px;
+    font-size: 20px;
+    margin: 10px;
+    padding: 5px;
+}
+
+.clsBtn {
+    margin-top: 0px;
+    margin: 10px;
+}
+
+.btn {
+    font-family: 'Jost', sans-serif;
+    background-color: #FD7272;
+    border: #1F0113 solid 1px;
+}
+
+.btn:hover {
+background-color: #f8a5c2;
+border-color: aliceblue;
+border-width: 2px;
+}
+
+.chuck_area {
+    width: 300px;
+    padding-right: 5px;
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Jost:wght@300;400&display=swap" rel="stylesheet">
+    <title>Фильмотека</title>
+</head>
+<header>
+    <div class="header_blocks">
+        <div class="header_text">
+            Your FILM GALLERY
+        </div>
+        <div class="header_img">
+            <div class="chuck_area">
+                
+            </div>
+            <button class="btn" id="chuck_btn" onclick="toShowFact()">Показать новый факт</button>
+        </div>
+        <div class="add_film_but">
+            <button class="add_film_button btn" onclick="openForm()">Добавить фильм</button>
+        </div>
+</header>
+
+<body>
+    <div class="main" id="main">
+        <div id="adding" class="adding">
+            <div class="divInput">
+                <label>Название:</label>
+                <input type="text" id="title" class="filmInput">
+            </div>
+            <div class="divInput">
+                <label>Жанр:</label>
+                <input type="text" id="genre" class="filmInput">
+            </div>
+            <div class="divInput">
+                <label>Страна:</label>
+                <input type="text" id="country" class="filmInput">
+            </div>
+            <div class="divInput">
+                <label>Режиссер:</label>
+                <input type="text" id="director" class="filmInput">
+            </div>
+            <div class="divInput">
+                <label>Сценарий:</label>
+                <input type="text" id="scenary" class="filmInput">
+            </div>
+            <div class="divInput">
+                <label>Продюсер:</label>
+                <input type="text" id="producer" class="filmInput">
+            </div>
+            <div class="divInput">
+                <label>Оператор:</label>
+                <input type="text" id="operator" class="filmInput">
+            </div>
+            <div class="divInput">
+                <label>Композитор:</label>
+                <input type="text" id="compositor" class="filmInput">
+            </div>
+            <div class="divInput">
+                <label>Бюджет:</label>
+                <input type="text" id="budget" class="filmInput">
+            </div>
+            <div class="divInput">
+                <label>Мировые сборы:</label>
+                <input type="text" id="worldFees" class="filmInput">
+            </div>
+            <div class="divInput">
+                <label>Рейтинг:</label>
+                <input type="text" id="ageRaiting" class="filmInput">
+            </div>
+            <div class="divInput">
+                <label>Длительность:</label>
+                <input type="text" id="duration" class="filmInput">
+            </div>
+            <div class="divInput">
+                <label>Дата выхода:</label>
+                <input type="text" id="date" class="filmInput">
+            </div>
+            <div class="divInput">
+                <label>Постер:</label>
+                <input type="text" id="poster" class="filmInput">
+            </div>
+            <div class="btnBlock">
+                <button id="addBtn" class="addBtn btn" onclick="addFilm()">Добавить</button>
+            </div>
+
+        </div>
+        <div class="filter">
+            <select name="genreFilter" id="genreFilter" class="classFilter">
+                <option value="default">Жанр</option>
+                <option value="детектив">детектив</option>
+                <option value="мультфильм">мультфильм</option>
+                <option value="боевик">боевик</option>
+                <option value="драма">драма</option>
+            </select>
+
+            <select name="countryFilter" id="countryFilter" class="classFilter">
+                <option value="default">Страна</option>
+                <option value="Россия">Россия</option>
+                <option value="США">США</option>
+                <option value="Япония">Япония</option>
+                <option value="Великобритания">Великобритания</option>
+            </select>
+
+            <button class="toFilter btn" id="toFilter" onclick="toFilter()">
+                Показать
+            </button>
+        </div>
+        <div class="filmsZone" id="filmsZone">
+
+
+        </div>
+    </div>
+    <script src="ja.js"></script>
+</body>
+
+</html>
